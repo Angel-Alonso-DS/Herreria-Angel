@@ -1,32 +1,19 @@
-import { useState } from 'react'
+import { About, Contact, Gallery, Hero } from "./features/presentations";
+import { FloatingWhatsApp, Header } from "./features/components/layout";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <section id="center">
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <main>
+                <Hero />
+                <Gallery />
+                <About />
+            </main>
+            <Contact />
+            <FloatingWhatsApp></FloatingWhatsApp>
+        </>
+    );
 }
 
-export default App
+export default App;

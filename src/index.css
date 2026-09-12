@@ -1,1 +1,25 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
+
+@theme {
+    /* Color — paleta exclusiva del cliente, + blanco como neutro de contraste */
+    --color-primary: #4c79c6;
+    --color-on-primary: #4469a8;
+    --color-secondary: #d05555;
+    --color-eyebrow: #add3e4;
+    --color-gray-light: #dfe2e3;
+    --color-blue-gray: #687a9b;
+    --color-dark: #5b5d65;
+    --color-white: #ffffff;
+
+    --color-bg: var(--color-dark);
+    --color-surface: rgba(104, 122, 155, 0.12);
+    --color-surface-alt: rgba(104, 122, 155, 0.2);
+    --color-text: var(--color-white);
+    --color-text-muted: var(--color-gray-light);
+    --color-border: rgba(201, 205, 208, 0.18);
+
+    /* Tipografía */
+    --font-display: "Space Grotesk", "Arial", sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
