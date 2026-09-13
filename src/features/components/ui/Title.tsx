@@ -1,17 +1,18 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../utils/cn";
+import type { ComponentProps } from "react";
 
 const title = cva("font-semibold tracking-[0.15em]", {
     variants: {
         variant: {
-            normal: "",
-            hero: "",
-            accent: "",
+            normal: "items-center",
+            hero: "text-white font-display lg:text-text-primary",
+            accent: "text-primary",
         },
         size: {
-            sm: "h-10 px-5 text-xs",
-            md: "h-12 px-6 text-sm",
-            lg: "h-14 px-8 text-sm",
+            sm: "text-md md:text-lg",
+            md: "text-lg md:text-xl",
+            lg: "text-3xl md:text-5xl",
         },
     },
     defaultVariants: {
@@ -20,8 +21,10 @@ const title = cva("font-semibold tracking-[0.15em]", {
     },
 });
 
-type TitleProps = { children: React.ReactNode } & VariantProps<typeof title>;
+type TitleProps = ComponentProps<"h1"> & VariantProps<typeof title>;
 
-export function Title({ variant, size, ...props }: TitleProps) {
-    return <h1 className={cn(title({ variant, size }))} {...props} />;
+export function Title({ variant, size, className, ...props }: TitleProps) {
+    return (
+        <h1 className={cn(title({ variant, size }), className)} {...props} />
+    );
 }

@@ -8,7 +8,7 @@ export function FloatingWhatsApp() {
 
     return (
         <a
-            className="fixed flex z-20 items-center justify-center right-6 bottom-6 w-14 h-14 rounded-[50%] bg-primary text-white shadow-2xl shadow-amber-100"
+            className="fixed flex z-20 items-center justify-center right-6 bottom-6 w-14 h-14 rounded-[50%] bg-primary text-white shadow-2xl shadow-black transition-colors duration-200 hover:bg-on-primary"
             href={buildWhatsappLink(
                 contact.whatsapp,
                 "Hola, me gustaría cotizar un trabajo de herrería.",

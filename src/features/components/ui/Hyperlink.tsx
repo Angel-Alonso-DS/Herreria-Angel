@@ -1,17 +1,20 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import type { ComponentProps } from "react";
 import { cn } from "../../utils/cn";
+import { buttonStyleNormal, buttonStyleOutline } from "./Button";
 
-const hyperlink = cva("items-center", {
+const hyperlink = cva("font-body transition-all duration-200 ", {
     variants: {
         variant: {
-            link: "",
-            navigator: "",
+            link: "mt-4 underline underline-offset-4 decoration-2 decoration-primary/50 text-text-secondary/50 hover:text-on-primary",
+            navigator: "px-5 text-text-secondary hover:text-on-primary",
+            button: buttonStyleNormal,
+            button_outline: buttonStyleOutline,
         },
         size: {
-            sm: "h-10 px-5 text-xs",
-            md: "h-12 px-6 text-sm",
-            lg: "h-14 px-8 text-sm",
+            sm: "text-xs",
+            md: "text-sm",
+            lg: "text-md",
         },
     },
     defaultVariants: {

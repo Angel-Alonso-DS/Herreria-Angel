@@ -10,6 +10,14 @@ export interface CompanyRepository {
     get(): Promise<CompanyInfo>;
 }
 
+export interface CategoryItem {
+    name: string;
+}
+
+export interface CategoryRepository {
+    getAll(): Promise<CategoryItem[]>;
+}
+
 export interface ContactInfo {
     phone: string;
     whatsapp: string;
@@ -24,6 +32,7 @@ export interface ContactRepository {
 export interface GalleryItem {
     id: string;
     title: string;
+    category: CategoryItem;
     imageUrl: string;
     imageAlt: string;
 }

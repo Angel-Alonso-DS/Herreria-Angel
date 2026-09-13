@@ -1,5 +1,5 @@
 import { About, Contact, Gallery, Hero } from "./features/presentations";
-import { FloatingWhatsApp, Header } from "./features/components/layout";
+import { FloatingWhatsApp, Footer, Header } from "./features/components/layout";
 
 function App() {
     return (
@@ -9,8 +9,9 @@ function App() {
                 <Hero />
                 <Gallery />
                 <About />
+                <Contact />
             </main>
-            <Contact />
+            <Footer />
             <FloatingWhatsApp></FloatingWhatsApp>
         </>
     );
