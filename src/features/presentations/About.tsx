@@ -4,7 +4,7 @@ import { Container, Overline, Title, Text } from "../components/ui";
 export function About() {
     const { data: companyInfo } = useCompanyInfo();
     return (
-        <Container id="about" className="bg-bg-secondary">
+        <Container id="about" className="bg-bg-primary">
             <div className="flex flex-col md:flex-row">
                 <section className="flex-1">
                     <Overline>Nosotros</Overline>

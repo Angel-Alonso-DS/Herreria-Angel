@@ -5,7 +5,7 @@ export function Contact() {
     const { data: contact } = useContactInfo();
 
     return (
-        <Container id="contact" className="bg-bg-primary">
+        <Container id="contact" className="bg-panel">
             <Overline>Hablemos de tu proyecto</Overline>
             <Title>Contacto</Title>
             <Text>

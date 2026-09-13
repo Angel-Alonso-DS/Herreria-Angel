@@ -2,12 +2,12 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../utils/cn";
 import type { ComponentProps } from "react";
 
-const title = cva("font-semibold tracking-[0.15em]", {
+const title = cva("tracking-[0.15em]", {
     variants: {
         variant: {
-            normal: "items-center",
+            normal: "items-center font-display",
             hero: "text-white font-display lg:text-text-primary",
-            accent: "text-primary",
+            accent: "text-primary font-semibold",
         },
         size: {
             sm: "text-md md:text-lg",

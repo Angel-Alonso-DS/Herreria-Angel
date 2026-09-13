@@ -1,3 +1,13 @@
+export interface ServiceItem {
+    name: string;
+    icon: string;
+    description: string;
+}
+
+export interface ServiceRepository {
+    getAll(): Promise<ServiceItem[]>;
+}
+
 export interface CompanyInfo {
     name: string;
     titleHero: string;

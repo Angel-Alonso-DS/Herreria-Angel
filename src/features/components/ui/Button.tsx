@@ -5,7 +5,7 @@ import { cn } from "../../utils/cn";
 export const buttonStyleNormal =
     "bg-text-primary p-5 text-white hover:bg-on-primary";
 export const buttonStyleOutline =
-    "border border-white text-white md:border-text-primary p-5 md:text-text-primary hover:border-on-primary hover:text-on-primary";
+    "border bg-bg-primary border-text-primary p-5 text-text-primary hover:border-on-primary hover:text-on-primary";
 
 const button = cva(
     "inline-flex items-center justify-center rounded-sm font-semibold tracking-[0.15em] transition-colors duration-200",

@@ -8,10 +8,13 @@ export function Header() {
             <Title size={"sm"}>{companyInfo?.name}</Title>
             <nav className="hidden md:flex">
                 <Hyperlink variant={"navigator"} href="#hero">
-                    Hero
+                    Inicio
                 </Hyperlink>
                 <Hyperlink variant={"navigator"} href="#gallery">
-                    Catalogo
+                    Trabajos
+                </Hyperlink>
+                <Hyperlink variant={"navigator"} href="#services">
+                    Servicios
                 </Hyperlink>
                 <Hyperlink variant={"navigator"} href="#about">
                     Nosotros
