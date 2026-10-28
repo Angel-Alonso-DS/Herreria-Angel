@@ -18,28 +18,28 @@ export const staticCategoryRepository: CategoryRepository = {
 const galleryItems: GalleryItem[] = [
     {
         id: "p011209",
-        title: "Porton",
+        title: "Porton oscuro con agarraderas",
         imageUrl: "/gallery/porton-01.jpg",
-        imageAlt: "Porton oscuro con agarraderas",
+        imageAlt: "Porton",
         category: category[0],
     },
     {
         id: "p021209",
-        title: "Porton",
+        title: "Porton oscuro con agarraderas",
         imageUrl: "/gallery/porton-02.jpg",
         imageAlt: "Porton oscuro con agarraderas",
         category: category[0],
     },
     {
         id: "p031209",
-        title: "Porton",
+        title: "Porton cafe con agarraderas",
         imageUrl: "/gallery/porton-03.jpg",
         imageAlt: "Porton cafe con agarraderas",
         category: category[0],
     },
     {
         id: "p041209",
-        title: "Porton",
+        title: "Porton detallado",
         imageUrl: "/gallery/porton-04.jpg",
         imageAlt: "Porton detallado",
         category: category[0],
@@ -53,7 +53,7 @@ const galleryItems: GalleryItem[] = [
     },
     {
         id: "p061209",
-        title: "Porton",
+        title: "Porton grande con puerta",
         imageUrl: "/gallery/porton-06.jpg",
         imageAlt: "Porton grande con puerta",
         category: category[0],

@@ -1,5 +1,5 @@
 import type { GalleryItem } from "../../../core/domain";
-import { Overline } from "./Overline";
+import { Title } from "./Title";
 
 type GalleryCardProps = Omit<GalleryItem, "id">;
 
@@ -10,15 +10,19 @@ export function GalleryCard({
     imageAlt,
 }: GalleryCardProps) {
     return (
-        <div className="relative w-full">
+        <div className="w-full">
             <img
-                className="w-full h-96 object-cover z-10"
+                className="w-full h-96 object-cover mb-4"
                 src={imageUrl}
                 alt={imageAlt}
             />
-            <div className="absolute pb-4 pt-5 px-4 text-lg text-white bg-linear-to-b from-black/20 to-black/80 w-full bottom-0">
-                <Overline>{category.name}</Overline>
-                {title}
+            <div className="text-lg">
+                <p className="text-secondary text-xs tracking-[0.3em] uppercase mb-1">
+                    {category.name}
+                </p>
+                <Title size="sm" className="mb-2">
+                    {title}
+                </Title>
             </div>
         </div>
     );

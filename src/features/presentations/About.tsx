@@ -13,7 +13,7 @@ export function About() {
                     <Text>{companyInfo?.description}</Text>
                 </section>
                 <div className="hidden md:block w-1 bg-primary mx-4" />
-                <section className="my-4">
+                <section className="my-4 self-center text-center md:self-start md:text-left">
                     <div className="flex flex-row md:flex-col">
                         <Title variant={"accent"} size={"lg"}>
                             {`${companyInfo?.yearsOfExperience} Años`}
